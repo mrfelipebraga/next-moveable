@@ -1,5 +1,6 @@
 import { deepFlat } from "@daybrush/utils";
 import { GroupManager, TargetList } from "@moveable/helper";
+import { message } from "antd";
 import React, { useMemo } from "react";
 import { useKeycon } from "react-keycon";
 import Moveable, { MoveableTargetGroupsType } from "react-moveable";
@@ -59,6 +60,8 @@ export function SelectoArea() {
       return next;
     });
 
+    message.success("Elementos agrupados!");
+
     setTargets([nextGroup] as unknown as ElementType[]);
   }, [targets, groupManager]);
 
@@ -78,6 +81,8 @@ export function SelectoArea() {
 
       return next;
     });
+
+    message.success("Elementos desagrupados!");
 
     setTargets(nextTargets as ElementType[]);
   }, [targets, groupManager]);
