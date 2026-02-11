@@ -4,14 +4,13 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-color: white;
 }
 
 .container {
-  background-color: gainsboro;
+  background-color: white;
   position: relative;
-  width: 50vw;
-  height: 50vh;
+  width: 75vw;
+  height: 75vh;
   overflow: hidden;
 }
 
